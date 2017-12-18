@@ -5,7 +5,7 @@
   "description": "Ad removal extension for 多瑙影院(www.dnvod.tv)",
   "content_scripts": [ {
     "css": [],
-    "js": ["main.js"],
+    "js": ["bundle.js"],
     "matches": [ "http://*/*", "https://*/*" ]
   }],
   "permissions": [],

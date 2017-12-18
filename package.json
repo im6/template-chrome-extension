@@ -4,7 +4,7 @@
   "description": "",
   "main": "chrome/main.js",
   "scripts": {
-    "dev": "webpack --inline --progress --profile --colors --config build/webpack.dev.js",
+    "start": "webpack --progress --profile --colors --config build/webpack.dev.js",
     "build": "webpack --config build/webpack.prod.js"
   },
   "repository": {
