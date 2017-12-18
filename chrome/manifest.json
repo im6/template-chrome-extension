@@ -2,7 +2,7 @@
 {
   "name": "dnoad",
   "version": "0.0.1",
-  "description": "Ad removal for 多瑙影院(www.dnvod.tv)",
+  "description": "Ad removal extension for 多瑙影院(www.dnvod.tv)",
   "content_scripts": [ {
     "css": [],
     "js": ["main.js"],

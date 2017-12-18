@@ -1,0 +1,23 @@
+{
+  "name": "dnoad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chrome/main.js",
+  "scripts": {
+    "dev": "webpack --inline --progress --profile --colors --config build/webpack.dev.js",
+    "build": "webpack --config build/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zj1926/dnoad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zj1926/dnoad/issues"
+  },
+  "homepage": "https://github.com/zj1926/dnoad#readme",
+  "dependencies": {
+    "webpack": "^3.10.0"
+  }
+}
