@@ -3,10 +3,9 @@ const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  entry: `./src/${pjson.vedd rsion_src}/index.js`,
+  entry: './src/index.js',
   output: {
     path: path.join(__dirname, '../dist'),
-    publicPath: 'http://dkny.oss-cn-hangzhou.aliyuncs.com/3/',
     filename: 'main.min.js'
   },
 
