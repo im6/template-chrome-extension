@@ -1,0 +1,17 @@
+
+{
+  "name": "dnoad",
+  "version": "0.0.1",
+  "description": "Ad removal for 多瑙影院(www.dnvod.tv)",
+  "content_scripts": [ {
+    "css": [],
+    "js": ["main.js"],
+    "matches": [ "http://*/*", "https://*/*" ]
+  }],
+  "permissions": [],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "manifest_version": 2
+}
