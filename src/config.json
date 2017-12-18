@@ -5,6 +5,21 @@
         ".tgg",
         ".ggw"
       ]
+    },
+    "/Touch/Movie/detail.aspx": {
+      "rm": [
+        ".tgg",
+        ".r-gg",
+        ".ggw-l",
+        ".bflbout"
+      ]
+    },
+    "/Touch/Movie/Readyplay.aspx": {
+      "rm": [
+        "div[data-img]",
+        ".bflbout",
+        ".p-rbt"
+      ]
     }
   }
 }
