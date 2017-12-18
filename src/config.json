@@ -1,0 +1,10 @@
+{
+  "path":{
+    "/Touch/index.aspx": {
+      "rm": [
+        ".tgg",
+        ".ggw"
+      ]
+    }
+  }
+}
