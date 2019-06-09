@@ -1,13 +1,13 @@
 
 {
-  "name": "dnoad",
-  "short_name": "dnoad",
-  "description": "Ad removal extension for 多瑙影院(www.dnvod.tv)",
+  "name": "chrome extension starter",
+  "short_name": "ch-ex-st",
+  "description": "chrome extension starter",
   "version": "0.0.1",
   "manifest_version": 2,
   "permissions": [],
   "browser_action": {
-    "default_title": "dnoad"
+    "default_title": "chrome extension starter"
   },
   "icons" : {
     "16" : "icon-16.png",
@@ -22,13 +22,11 @@
   "content_scripts": [{
     "css": [],
     "js": [
-      "jquery-3.2.1.min.js",
+      "jquery-3.4.1.min.js",
       "content.js"
     ],
     "matches": [
-      "http://www.dnvod.tv/*",
-      "https://www.dnvod.tv/*",
-      "https://www.ifun.tv/*"
+      "http://www.YOUR-DOMAIN.com/*"
     ]
   }]
 }
