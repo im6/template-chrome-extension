@@ -1,5 +1,5 @@
 {
-  "name": "dnoad",
+  "name": "template-chrome-extension",
   "version": "1.0.0",
   "description": "",
   "main": "chrome/main.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zj1926/dnoad.git"
+    "url": "git+https://github.com/im6/template-chrome-extension.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zj1926/dnoad/issues"
+    "url": "https://github.com/im6/template-chrome-extension/issues"
   },
-  "homepage": "https://github.com/zj1926/dnoad#readme",
+  "homepage": "https://github.com/im6/template-chrome-extension#readme",
   "dependencies": {
     "uglifyjs-webpack-plugin": "^1.1.4",
     "webpack": "^3.10.0"
