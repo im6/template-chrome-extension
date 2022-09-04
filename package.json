@@ -8,7 +8,6 @@
     "build": "webpack --config build/webpack.prod.js"
   },
   "repository": "git+https://github.com/im6/template-chrome-extension.git",
-  "author": "im6 <ee2win@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/im6/template-chrome-extension/issues"
