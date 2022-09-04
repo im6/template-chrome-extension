@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/manifest.json",
   "scripts": {
-    "start": "webpack --progress --profile --colors --config build/webpack.dev.js",
+    "start": "webpack serve --config build/webpack.dev.js",
     "build": "webpack --config build/webpack.prod.js"
   },
   "repository": "git+https://github.com/im6/template-chrome-extension.git",
@@ -17,7 +17,8 @@
   "dependencies": {},
   "private": false,
   "devDependencies": {
-    "webpack": "^4.34.0",
-    "webpack-cli": "^3.3.4"
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.1"
   }
 }

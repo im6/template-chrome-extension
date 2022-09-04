@@ -5,9 +5,9 @@
 - jQuery
 
 ```sh
-npm start # start development
+yarn start # start development
 ```
 
 ```sh
-npm build # build extension
+yarn build # build extension
 ```
