@@ -1,1 +1,27 @@
-(()=>{"use strict";var e={n:t=>{var n=t&&t.__esModule?()=>t.default:()=>t;return e.d(n,{a:n}),n},d:(t,n)=>{for(var o in n)e.o(n,o)&&!e.o(t,o)&&Object.defineProperty(t,o,{enumerable:!0,get:n[o]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t)};const t=jQuery;var n=e.n(t);chrome.runtime.onMessage.addListener((function(e,t,n){alert("content received: ("+e+")")}));var o=document.createElement("button");o.innerText="send to background",o.style.fontSize="2em",o.style.position="absolute",o.style.top="200px",o.style.left="400px",o.style.padding="10px",o.style.background="#fb5cb8",o.onclick=function(){chrome.runtime.sendMessage("msg from content")},document.querySelector("body").appendChild(o),console.log("jQuery version",n().fn.jquery)})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!************************!*\
+  !*** ./src/content.js ***!
+  \************************/
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  alert("content received: (" + message + ")");
+});
+
+var btn = document.createElement("button");
+btn.innerText = "send to background";
+btn.style.fontSize = "2em";
+btn.style.position = "absolute";
+btn.style.top = "200px";
+btn.style.left = "400px";
+btn.style.padding = "10px";
+btn.style.background = "#fb5cb8";
+btn.onclick = function () {
+  chrome.runtime.sendMessage("msg from content");
+};
+document.querySelector("body").appendChild(btn);
+
+console.log("hello world");
+
+/******/ })()
+;
+//# sourceMappingURL=content.js.map

@@ -1,9 +1,6 @@
-chrome.browserAction.onClicked.addListener(function(tab){
-  chrome.tabs.sendMessage(tab.id, 'msg from background');
+self.addEventListener("install", (event) => {
+  console.log("Service worker installed");
 });
-
-chrome.runtime.onMessage.addListener(function(message) {
-  alert("background received: (" + message + ')');
+self.addEventListener("activate", (event) => {
+  console.log("Service worker activated");
 });
-
-chrome.runtime.sendMessage("msg: from background");

@@ -1,1 +1,19 @@
-chrome.browserAction.onClicked.addListener((function(e){chrome.tabs.sendMessage(e.id,"msg from background")})),chrome.runtime.onMessage.addListener((function(e){alert("background received: ("+e+")")})),chrome.runtime.sendMessage("msg: from background");
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!***************************!*\
+  !*** ./src/background.js ***!
+  \***************************/
+self.addEventListener("install", (event) => {
+  console.log("Service worker installed");
+});
+self.addEventListener("activate", (event) => {
+  console.log("Service worker activated");
+
+  chrome.runtime.onMessage.addListener(function (message) {
+    console.log("background received: (" + message + ")");
+  });
+});
+
+/******/ })()
+;
+//# sourceMappingURL=background.js.map
