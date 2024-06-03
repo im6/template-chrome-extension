@@ -20,8 +20,6 @@ btn.onclick = function () {
 };
 document.querySelector("body").appendChild(btn);
 
-console.log("hello world");
-
 /******/ })()
 ;
 //# sourceMappingURL=content.js.map

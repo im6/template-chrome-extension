@@ -8,10 +8,6 @@ self.addEventListener("install", (event) => {
 });
 self.addEventListener("activate", (event) => {
   console.log("Service worker activated");
-
-  chrome.runtime.onMessage.addListener(function (message) {
-    console.log("background received: (" + message + ")");
-  });
 });
 
 /******/ })()
