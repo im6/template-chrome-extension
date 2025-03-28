@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/manifest.json",
   "scripts": {
-    "build": "webpack --config webpack.js"
+    "dev": "npx webpack --config webpack/dev.js",
+    "build": "webpack --config webpack/build.js"
   },
   "repository": "git+https://github.com/im6/template-chrome-extension.git",
   "license": "ISC",
@@ -12,11 +13,13 @@
     "url": "https://github.com/im6/template-chrome-extension/issues"
   },
   "homepage": "https://github.com/im6/template-chrome-extension#readme",
-  "dependencies": {},
+  "dependencies": {
+    "copy-webpack-plugin": "^13.0.0"
+  },
   "private": false,
   "devDependencies": {
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   }
 }

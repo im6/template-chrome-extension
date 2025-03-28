@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   devtool: "cheap-source-map",
   entry: {
     content: "./src/content.js",
