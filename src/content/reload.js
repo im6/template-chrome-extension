@@ -20,7 +20,11 @@ const initReload = () => {
 
   document.querySelector("body").appendChild(btn);
   btn.addEventListener("click", () => {
-    chrome.runtime.sendMessage(undefined, { type: "reload" });
+    try {
+      chrome.runtime.sendMessage(undefined, { type: "reload" });
+    } catch (error) {
+      console.error("Error sending reload message:", error);
+    }
     btn.style.display = "none";
     setTimeout(() => {
       location.reload();
