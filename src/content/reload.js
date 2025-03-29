@@ -1,22 +1,19 @@
-const reloadBtnStyle = {
-  fontSize: "3em",
-  top: "20px",
-  right: "20px",
-  padding: "8px 30px",
-  position: "absolute",
-  borderRadius: "5px",
-  background: "yellow",
-  position: "fixed",
-  zIndex: "99999",
-};
-
 const initReload = () => {
   const btn = document.createElement("button");
-  btn.innerText = "RELOAD";
-
-  Object.keys(reloadBtnStyle).forEach((key) => {
-    btn.style[key] = reloadBtnStyle[key];
-  });
+  btn.innerText = "reload";
+  btn.classList.add(
+    "text-yellow-300",
+    "bg-black",
+    "text-5xl",
+    "fixed",
+    "top-5",
+    "right-5",
+    "px-8",
+    "py-3",
+    "rounded-md",
+    "z-50",
+    "uppercase"
+  );
 
   document.querySelector("body").appendChild(btn);
   btn.addEventListener("click", () => {

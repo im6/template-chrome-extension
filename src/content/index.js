@@ -1,3 +1,4 @@
+import "./styles.css";
 import { getInterval } from "./observables";
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
