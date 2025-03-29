@@ -1,14 +1,7 @@
-const path = require("path");
+const baseConfig = require("./base");
 
 module.exports = {
+  ...baseConfig,
   mode: "production",
   devtool: "cheap-source-map",
-  entry: {
-    content: "./src/content.js",
-    background: "./src/background.js",
-  },
-  output: {
-    path: path.join(__dirname, "./dist"),
-    filename: "[name].js",
-  },
 };

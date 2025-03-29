@@ -1,11 +1,10 @@
 {
   "name": "chrome extension starter",
-  "short_name": "ch-ex-st",
   "description": "chrome extension starter",
   "version": "0.0.1",
   "manifest_version": 3,
   "permissions": ["nativeMessaging"],
-  "host_permissions": ["https://www.youtube.com/"],
+  "host_permissions": ["https://github.com/"],
   "optional_host_permissions": [],
   "icons": {
     "16": "static/icon-16.png",
@@ -23,7 +22,7 @@
     {
       "css": [],
       "js": ["content.js"],
-      "matches": ["https://www.youtube.com/*"]
+      "matches": ["https://github.com/*"]
     }
   ]
 }

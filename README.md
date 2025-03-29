@@ -1,1 +1,1 @@
-# Chrome Extension Starter v3
+# Chrome Extension Starter v1
