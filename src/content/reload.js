@@ -4,15 +4,15 @@ const initReload = () => {
   btn.classList.add(
     "text-yellow-300",
     "bg-black",
-    "text-5xl",
-    "fixed",
+    "!text-5xl",
+    "!fixed",
     "top-5",
     "right-5",
     "px-8",
     "py-3",
     "rounded-md",
-    "z-50",
-    "uppercase"
+    "!z-50",
+    "!uppercase"
   );
 
   document.querySelector("body").appendChild(btn);
@@ -20,7 +20,7 @@ const initReload = () => {
     try {
       chrome.runtime.sendMessage(undefined, { type: "reload" });
     } catch (error) {
-      console.error("Error sending reload message:", error);
+      console.warn("Error sending reload message:", error);
     }
     btn.style.display = "none";
     setTimeout(() => {
